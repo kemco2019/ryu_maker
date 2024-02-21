@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="ryu-api-style.css">
 <?php
-    $key = "68327d0d48208f2afe08ebceede74605lwynmwPIgCC7ymVWVIOSpSWIOVIVIISI";
+    $key = "YOUR_KOH_API_KEY";
     $url = "https://objecthub.keio.ac.jp/open_koh/v1/object?api_key=" . $key;
     $keyword = "龍,竜,辰";
 
