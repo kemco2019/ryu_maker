@@ -10,7 +10,7 @@ img_url = sys.argv[1]
 prompt = "A painting of a dragon"
 engine_id = "stable-diffusion-xl-1024-v1-0"
 api_host = "https://api.stability.ai"
-api_key = "sk-0FQmfHxrRefrXbIwx0ik7f2ZYIbsCJ5PtLasaAer8EaHfnQO" # kemco account
+api_key = "YOUR_API_KEY"
 
 dst_path = 'ryu-style.jpg'
 urllib.request.urlretrieve(img_url, dst_path)
