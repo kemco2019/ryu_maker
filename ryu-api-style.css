@@ -3,7 +3,7 @@
  *
  * ------------------------------------------------------------------- */
 body {
-    background-image: url("ryu-back.jpeg"); /*背景ランダムに持ってきたい*/
+    background-image: url("ryu-back.jpeg");
     background-color:rgba(255,255,255,0.7);
     background-size: 100%;
     background-color: rgba(#fff, 0.7);
@@ -16,7 +16,6 @@ body {
  * ------------------------------------------------------------------- */
 .commonContent{
     display: flex;
-    /*justify-content: space-between;*/
     width: 100%;
     background-color: #fff;
 }
