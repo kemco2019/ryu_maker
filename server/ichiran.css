@@ -1,0 +1,85 @@
+/* ===================================================================
+ * # header
+ *
+ * ------------------------------------------------------------------- */
+ .commonContent{
+    display: flex;
+    /*justify-content: space-between;*/
+    width: 100%;
+    background-color: #fff;
+}
+#kemlogo{
+    width: 8%;
+    height: auto;
+    padding: 1%;
+}
+.top_images{
+    text-align: center;
+    margin: auto 0;
+    font-size: xx-large;
+    font-family:"Yu Gothic", "游ゴシック", "YuGothic", "游ゴシック体";
+    font-weight:bold;
+}
+
+/* ===================================================================
+ * # main
+ *
+ * ------------------------------------------------------------------- */
+ .img_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+	padding-bottom: 60px;
+}
+.img_container a{
+    width: 23%;
+    margin: 1% 1%;
+}
+.img_container img{
+    width: 100%;
+}
+
+a.btn_03 {
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 120px;
+	margin: 10px;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	border: 2px solid #94BFCF;
+	color: #94BFCF;
+	border-radius: 100vh;
+	transition: 0.5s;
+}
+a.btn_03:hover {
+	color: #fff;
+	background: #94BFCF;
+}
+.back-to-top {
+	display: none;
+	position: fixed;
+	right: 5%;
+	bottom: 5%;
+	color: #fff;
+	padding: 2rem;
+	border-radius: 50%;
+	display: inline-block;
+	text-decoration: none;
+}
+.back-to-top::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	background-color: #333;
+	border-radius: 50%;
+	z-index: -1;
+}
+
+	
