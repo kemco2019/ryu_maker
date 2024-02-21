@@ -2,7 +2,7 @@
 <?php
     $style = $_POST['paint-style'];
 
-    $key = "68327d0d48208f2afe08ebceede74605lwynmwPIgCC7ymVWVIOSpSWIOVIVIISI";
+    $key = "YOUR_KOH_API_KEY";
     $url = "https://objecthub.keio.ac.jp/open_koh/v1/object?api_key=" . $key;
     if (strcmp($style, '---') != 0){
         $url_style = $url . '&data_id=' . $style;
