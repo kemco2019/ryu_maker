@@ -1,6 +1,6 @@
 # 龍メーカー
 Keio Object Hub(KOH)内の龍にまつわる作品を元にした龍のイラストをAIが生成<br>
-画像生成AI：Stable Diffusion(Dream Studio)<br>
+画像生成AI：Stable Diffusion<br>
 参考URL：https://studio.kemco.keio.ac.jp/NewYear2024/ryu-maker/ichiran.php
 
 # 概要
@@ -11,7 +11,9 @@ Keio Object Hub(KOH)内の龍にまつわる作品を元にした龍のイラス
 - stable-function.js：ローディング表示js
 
 サーバ
-- 
+- upload.php：アップロード完了ページ
+- ichiran.php：完成画像一覧ページ
+- ichiran.js：トップボタン表示js
 
 # 使用方法
 ## データベース作成
@@ -22,11 +24,10 @@ Keio Object Hub(KOH)内の龍にまつわる作品を元にした龍のイラス
 |    id    |   int    |  　|  | AUTO_INCREMENT |
 |   path   |   text   | utf8mb4_general_ci |  |  |
 | datetime | datetime |  | CURRENT_TIMESTAMP |  |
+|   url    |   text   | utf8mb4_general_ci |  |  |
 
-## Discord設定
-1. "Midjourney Image Download Server"というサーバを作成
-2. Midjourney BotをMidjourney Image Download Serverに追加
-3. "ukiyoe_bot"というボットを作成し, Midjourney Image Download Serverに追加
+## Stability AI登録
+参考URL：https://platform.stability.ai/docs/getting-started
 
 参考URL：https://medium.com/@neonforge/how-to-create-a-discord-bot-to-download-midjourney-images-automatically-python-step-by-step-guide-90b6a8336e82
 
