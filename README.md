@@ -1,20 +1,17 @@
 # 龍メーカー
 Keio Object Hub(KOH)内の龍にまつわる作品を元にした龍のイラストをAIが生成<br>
+画像生成AI：Stable Diffusion(Dream Studio)<br>
 参考URL：https://studio.kemco.keio.ac.jp/NewYear2024/ryu-maker/ichiran.php
-画像生成AI：Stable Diffusion
 
 # 概要
-- camera.php:顔写真撮影ページ                                 
-- camera.py:撮影コード
-- download.py:生成画像自動保存コード
-- finish.php:生成画像表示ページ
-- get_url.py:生成画像の画像URL取得コード
-- making.php:画像生成待ちページ
-- midjourney.py:画像生成コード
-- myfile.txt:画像URL書き込みファイル
-- start.php:画風選択ページ
-- upload.php:生成画像アップロードページ
-- kuniyoshi_ichiran.php：作品一覧ページ(サーバ)
+ローカル
+- dream-studio-i2i.py：画像生成コード
+- ryu-api.php：画風選択ページ
+- ryu-form-submit.php：画像生成完了ページ
+- stable-function.js：ローディング表示js
+
+サーバ
+- 
 
 # 使用方法
 ## データベース作成
