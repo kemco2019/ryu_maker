@@ -1,9 +1,9 @@
 <link rel="stylesheet" href="ryu-upload-style.css">
 <?php
-    $host = "mysql57.kemco.sakura.ne.jp";
-    $dbName = "kemco_api";
-    $username = "kemco";
-    $password = "h76-id_z";
+    $host = "DATABASE_SERVER";
+    $dbName = "DATABASE_NAME";
+    $username = "USER_NAME";
+    $password = "PASSWORD";
     $dsn = "mysql:host={$host};dbname={$dbName};charser=utf8";
     try {
         $dbh = new PDO($dsn, $username, $password);
