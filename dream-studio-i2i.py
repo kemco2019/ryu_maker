@@ -5,6 +5,7 @@ import datetime
 import sys
 from PIL import Image
 import urllib.request
+# Copyright © 2001-2023 Python Software Foundation; All Rights Reserved
 
 img_url = sys.argv[1]
 prompt = "A painting of a dragon"
