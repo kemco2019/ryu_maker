@@ -17,7 +17,7 @@ Keio Object Hub(KOH)内の龍にまつわる作品を元にした龍のイラス
 
 # 使用方法
 ## データベース作成
-テーブル：ukiyoe2023_kuniyoshi
+テーブル：ryu_ai
 
 | 名前 | タイプ | 照合順序 | デフォルト値 | その他 |  
 | -------- | -------- | ------------------ | ----------------- | -------------- |
@@ -26,28 +26,17 @@ Keio Object Hub(KOH)内の龍にまつわる作品を元にした龍のイラス
 | datetime | datetime |  | CURRENT_TIMESTAMP |  |
 |   url    |   text   | utf8mb4_general_ci |  |  |
 
-## Stability AI登録
+## 準備
+1. Stability AIのアカウント登録をし, アカウントページからAPIキーを取得<br>
+無料クレジットは25クレジットのみで, 10ドル1000クレジットで購入が必要<br>
 参考URL：https://platform.stability.ai/docs/getting-started
-
-参考URL：https://medium.com/@neonforge/how-to-create-a-discord-bot-to-download-midjourney-images-automatically-python-step-by-step-guide-90b6a8336e82
-
-## デスクトップ配置
-以下の画像のように武者絵4枚, 美人画4枚, person.png, Discordをデスクトップに配置<br>
-各画像やDiscordのテキストボックスの座標を確認し, midjourney.py内のCoordinateの値を変更<br>
-<img src="https://github.com/kemco2019/ukiyoe_kuniyoshi/assets/128669621/fc8b7200-7cd7-4877-81b8-219ce9509432" width="800">
+2. Keio Object HubのAPIキーを取得
 
 # 実行
-** モニタを繋ぐなどし, デスクトップ画面とブラウザ画面を別画面で表示すること **
-
-0. ローカルサーバを起動, download.py, get_url.pyは常時実行
+0. ローカルサーバを起動
    ```
    php -S 127.0.0.1:8080
-   python3 download.py
-   python3 get_url.py
    ```
-1. camera.phpのロードによりカメラを起動, 撮影(Cキー：撮影, Qキー：カメラ終了)
-2. start.phpで武者絵風, 美人画風のいずれかを選択し丸印をクリック
-3. making.phpに遷移
-4. 画像生成が終わるとfinish.phpに遷移
-5. finish.phpで保存ボタンをクリックしサーバに生成画像をアップロード
-6. 戻るボタンでstart.phpに戻る
+1. ryu-api.phpのプルダウンで画風を選択
+2. ryu-form-submit.phpの保存ボタンで生成画像をサーバにアップロード
+3. uploadページの戻るボタンでryu-api.phpに戻る
