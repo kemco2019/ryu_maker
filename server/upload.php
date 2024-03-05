@@ -34,5 +34,5 @@
         echo '&size=100x100" alt="QRコード" id="qr" />';
     }
 ?>
-<a href="http://127.0.0.1:8080/ryu-maker/ryu-api.php" class="btn">戻る</a>
+<a href="http://127.0.0.1:8080/YOUR_PATH/ryu-api.php" class="btn">戻る</a>
 
