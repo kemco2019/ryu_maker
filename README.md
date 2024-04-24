@@ -26,7 +26,7 @@ Keio Object Hub(KOH)内の龍にまつわる作品を元にした龍のイラス
 | datetime | datetime |  | CURRENT_TIMESTAMP |  |
 |   url    |   text   | utf8mb4_general_ci |  |  |
 
-## 準備
+## APIキーの取得
 1. Stability AIのアカウント登録をし, アカウントページからAPIキーを取得<br>
 無料クレジットは25クレジットのみで, 10ドル1000クレジットで購入が必要<br>
 参考URL：https://platform.stability.ai/docs/getting-started
