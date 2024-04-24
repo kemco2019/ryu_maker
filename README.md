@@ -32,6 +32,12 @@ Keio Object Hub(KOH)内の龍にまつわる作品を元にした龍のイラス
 参考URL：https://platform.stability.ai/docs/getting-started
 2. Keio Object HubのAPIキーを取得
 
+## コードの書き換え
+以下の値を適切な値, 文字列に書き換える
+- upload.php：YOUR_PATH
+- dream-studio-i2i.py：YOUR_STABILITY_AI_API_KEY
+- ryu-api.php, ryu-form-submit.php：YOUR_KOH_API_KEY
+
 # 実行
 0. ローカルサーバを起動
    ```
